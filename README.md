@@ -1,33 +1,34 @@
-# shootback
+# Shootback
 
-shootback is a reverse TCP tunnel let you access target behind NAT or firewall  
-反向TCP隧道, 使得NAT或防火墙后的内网机器可以被外网访问.  
-Consumes less than 1% CPU and 8MB memory under 800 concurrency.  
-slaver is __single file__ and only depends on python(2.7/3.4+) standard library.
+Shootback is a reverse TCP tunnel. It enables you to access targets behind a NAT or a firewall. 
+Shootback 是一个反向 TCP 隧道, 使得 NAT 或防火墙后的内网机器可以被外网访问。
 
-## How it works
+It consumes less than 1% CPU and 8MB memory, in a 800 concurrency access environment.  
+Slaver is __single file__, and only depends on python(2.7/3.4+) standard libraries.
+
+## How Does It Work
 
 ![How shoot back works](https://raw.githubusercontent.com/aploium/shootback/static/graph.png)
 
 
-## Typical Scene
+## Typical Use Cases
 
-1. Access company/school computer(no internet IP) from home  
-   从家里连接公司或学校里没有独立外网IP的电脑
-2. Make private network/site public.  
-   使内网或内网站点能从公网访问
+1. Access your company/school computer (without a public IP) from home.
+   从家里连接公司或学校里没有独立外网IP的电脑。
+2. Make your private network/website public.
+   使内网或内网站点能从公网访问。
 3. Help private network penetration.  
-   辅助内网渗透
+   辅助内网渗透。
 4. Help CTF offline competitions.  
-   辅助CTF线下赛, 使场外选手也获得比赛网络环境
-5. Connect to device with dynamic IP, such as ADSL  
-   连接动态IP的设备, 如ADSL
-6. SSL encryption between slaver and master  
-   slaver和master间支持SSL加密
+   辅助 CTF 线下赛, 使场外选手也获得比赛网络环境。
+5. Connect to devices with dynamic IP, such as ADSL.
+   连接动态 IP 的设备, 如 ADSL。
+6. SSL encryption between slaver and master.
+   slaver 和 master 间支持 SSL 加密。
 
-## Getting started
+## Getting Started
 
-1. requirement:
+1. Requirements:
     * Master: Python3.4+, OS independent
     * Slaver: Python2.7/3.4+, OS independent
     * no external dependencies, only python std lib
